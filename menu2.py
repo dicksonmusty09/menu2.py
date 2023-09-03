@@ -1,5 +1,5 @@
 import customtkinter as ctk 
-#from PIL import Image , Image
+from PIL import Image , ImageTk
 from CTkMessagebox import CTkMessagebox
 
 
@@ -29,8 +29,7 @@ if __name__ == '__main__':
 
 
 # Load the background image
-bg_image = ctk.CTkImage(file="image3.png")  # Replace "background.pn
-
+bg_image = ImageTk.PhotoImage(file="image3.png") 
 # Create a label to display the background image
 bg_label = ctk.CTkLabel(sub_root, image=bg_image)
 bg_label.place(relwidth=1, relheight=1)
